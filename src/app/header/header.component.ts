@@ -3,11 +3,14 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
 
   constructor() { 
+  }
+
+  ngOnInit(): void {
     const path = '../../assets/socials-icons/'
     const socialList = [
       {alt: 'Logo Gmail', src: path + 'email.png'},
@@ -17,9 +20,6 @@ export class HeaderComponent implements OnInit {
       {alt: 'Logo Youtube', src: path + 'youtube.png'},
       {alt: 'Logo Spotify', src: path + 'facebook.png'},
     ]
-  }
-
-  ngOnInit(): void {
   }
 
 }
