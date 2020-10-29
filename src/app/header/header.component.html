@@ -1,0 +1,23 @@
+<div class="main-header">
+    <div class="header-top">
+        <h3 class="texte">Le crésit mutule donne le <span>LA</span></h3>
+        <a href="https://www.festival-lesdeferlantes.com/wp-content/uploads/2019/11/logo_argeles_rond_bleu.png" class="argeles-link">
+            <img src="../../assets/logo_argeles_rond_bleu.png" alt="Logo Argeles" class="logo">
+        </a>
+    </div>
+    <div class="main-nav">
+        <div class="logos">
+            <a href="">
+                <img src="../../assets/Fichier-1-1.png" alt="Logo Les Déferlantes" class="deferlante">
+            </a>
+        </div>
+        <div class="date"></div>
+    </div>
+    <ul class="main-socials">
+        <li *ngFor="let social of socialList">
+            <a href="#">
+                <img src={{social.src}} alt={{social.alt}}>
+            </a>
+        </li>
+    </ul>
+</div>
