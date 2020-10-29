@@ -1,6 +1,6 @@
 <div class="main-header">
     <div class="header-top">
-        <h3 class="texte">Le crésit mutule donne le <span>LA</span></h3>
+        <img src="../../assets/claim-credit-mutuelle.svg" alt="Crédit mutuel">
         <a href="https://www.festival-lesdeferlantes.com/wp-content/uploads/2019/11/logo_argeles_rond_bleu.png" class="argeles-link">
             <img src="../../assets/logo_argeles_rond_bleu.png" alt="Logo Argeles" class="logo">
         </a>
@@ -11,13 +11,25 @@
                 <img src="../../assets/Fichier-1-1.png" alt="Logo Les Déferlantes" class="deferlante">
             </a>
         </div>
-        <div class="date"></div>
+        <div class="nav">
+            <ul>
+                <li>Accueil</li>
+                <li class="border">Billeterie</li>
+                <li class="border">Prog</li>
+                <li>Partenaire</li>
+            </ul>
+        </div>
     </div>
-    <ul class="main-socials">
-        <li *ngFor="let social of socialList">
-            <a href="#">
-                <img src={{social.src}} alt={{social.alt}}>
-            </a>
-        </li>
-    </ul>
+    
+    <div class="main-socials">
+        <ul class="socials">
+            <li *ngFor="let ele of socialList">
+                <a href="#">
+                    <img src={{ele.src}} alt={{ele.alt}}>
+                </a>
+            </li>
+            <li style="vertical-align: middle; font-weight: bold;padding-top:5px;"><a href="https://riffx.fr" target="_blank" rel="noopener noreferrer">RIFFX<span style="font-size: 16px;">.fr</span></a></li>
+        </ul>
+    </div>
+    
 </div>
