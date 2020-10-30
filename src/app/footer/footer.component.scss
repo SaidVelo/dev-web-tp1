@@ -56,7 +56,7 @@ $color-light-blue: #41b8ff;
         background-color: #2b0000;
         color: white;
         border: none;
-        border-radius: 50px;
+        border-radius: 26px;
         padding: 10px 20px;
         margin: 25px 0;
     }
@@ -71,5 +71,34 @@ $color-light-blue: #41b8ff;
         padding: 10px 20px 30px 20px;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
+    }
+}
+
+@media(min-width:992px) {
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        .skull {
+            display: block;
+            width: 237px;
+            height: 196px;
+            margin-bottom: -63px;
+            margin-left: -77px;
+        }
+        .cloud {
+            width: 320px;
+            height: 84px;
+            margin-bottom: 25px;;
+        }
+    }
+    .footer-bottom {
+        padding: 30px 120px;
+        div {
+            width: 33%;
+        }
+        .contact {
+            width: 33%;
+        }
     }
 }
